@@ -1,0 +1,18 @@
+{
+  "dataset": "ESOL",
+  "source": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/delaney-processed.csv",
+  "raw_rows": 1128,
+  "invalid_or_missing_rows_removed": 0,
+  "duplicate_smiles_groups": 11,
+  "conflicting_groups_dropped": 1,
+  "final_rows": 1116,
+  "standardization": [
+    "Parse SMILES using RDKit",
+    "Select the largest fragment, preferring organic fragments",
+    "Attempt neutralization using RDKit Uncharger",
+    "Sanitize molecules",
+    "Convert to canonical SMILES"
+  ],
+  "deduplication": "Group identical canonical SMILES; average target values when target standard deviation <= 0.5; drop groups above 0.5",
+  "subsampling": "None"
+}
