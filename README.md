@@ -27,20 +27,16 @@ Primary dataset: **ESOL** (aqueous solubility, logS). Confirmation dataset: **Li
 │   ├── ESOL_CM4044_Prj2.ipynb
 │   └── LIPO_CM4044_Prj2.ipynb
 ├── data/
-│   ├── esol_curated.csv
-│   ├── esol_scaffold_splits.csv      # split manifest: row_idx, smiles, seed, split
-│   ├── esol_curation_log.json
-│   ├── lipo_curated.csv
-│   ├── lipo_scaffold_splits.csv
-│   └── lipo_curation_log.json
+│   ├── esol
+│   ├── lipo
 ├── models/
 │   ├── MODEL_CARD_xgb.md
 │   ├── MODEL_CARD_lstm.md
 │   ├── MODEL_CARD_gcn.md
-│   ├── xgb_models/                   # xgb_<dataset>_seed_<seed>.json
-│   ├── lstm_checkpoints/             # lstm_seed_<seed>.pt (weights + vocab)
-│   └── gcn_checkpoints/              # gcn_<dataset>_seed_<seed>.pt (weights + target mean/std)
-└── results/                          # per-seed metrics, predictions, error analysis, ensemble CSVs
+│   ├── xgb_checkpoints/                   
+│   ├── lstm_checkpoints/            
+│   └── gcn_checkpoints/        
+                       
 ```
 
 ## Setup
