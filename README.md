@@ -1,4 +1,3 @@
-# CM4044-Group-14-Project-2
 # MP2-01 One Molecule, Many Faces: Does the Representation Matter?
 
 **CM4044 Group 14, Project 2**
