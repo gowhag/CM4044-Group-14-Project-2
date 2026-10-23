@@ -97,3 +97,6 @@ Lipophilicity results: TODO (paste from the LIPO notebook).
 - ESOL and Lipophilicity are small, single-source benchmarks; scaffold splits give high variance between seeds (see the standard deviations above).
 - The LSTM maps unseen test tokens to the padding index (no separate `<unk>` embedding).
 - Results are from five seeds with one hyperparameter setting per model; no extensive tuning was done.
+
+
+!python -m pip freeze > requirements.txt
